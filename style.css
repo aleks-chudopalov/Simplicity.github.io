@@ -1,0 +1,427 @@
+
+*{
+box-sizing: border-box;
+	font-weight: normal;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+
+font-size: 12px;
+font-family: Georgia, serif;
+color: #666;
+}
+
+
+.container {
+	max-width: 1000px;
+  margin: 0 auto;
+ padding: 0 20px;
+  
+}
+
+header .container{
+	 background-color: rgb( 150, 183, 190 );
+}
+
+.header__inner{
+
+	height: 130px;
+		display: flex;
+justify-content: space-between;
+}
+
+nav{
+ display: flex;
+
+
+}
+
+.header__inner-title  {
+    margin: auto 0;
+}
+
+
+
+h1{
+	color: #fff;
+font-size: 56px;
+}
+
+.header-subtitle{
+color: #d3d3d3;
+	font-size: 16px;
+
+}
+
+
+a{
+color:black;
+}
+
+
+
+nav	div{
+	margin: auto 0;
+/*	display: flex;
+ align-items: center;*/
+	max-width: 168px;
+color: #000;
+border-left: 1px solid white;
+padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+nav	div:last-child {
+padding-right: 0;
+
+}
+
+
+h4	{
+		color: black;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+
+.header__inner-nav p{
+font-family: Verdana, Geneva, sans-serif;
+color: #333;	
+
+ display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  	 overflow: hidden;
+
+}
+
+/* main*/
+main .container{
+ background-color: rgb( 203, 221, 225 );
+  
+}
+
+
+.main__inner{
+  height: 400px;
+display: flex;
+justify-content: space-between;
+gap: 20px;
+}
+
+.main__inner-photo{
+width: 45.83%;
+	height: 90%;
+margin:  auto 0;
+ background-color: rgb( 203, 221, 225 );
+
+}
+.main__inner-photo img{
+
+width: 100%;
+height: 100%;
+object-fit:cover;
+ padding: 9px;
+border: 1px solid rgb( 150, 183, 190 );
+
+}
+
+.main__inner-article{
+	/*width: 450px;*/
+	flex: 1;
+	  display: inline-block;
+  align-self: flex-end;
+padding-bottom: 30px;
+}
+
+h2{
+font-size: 42px;
+color: #fff;
+
+}
+.main__inner-article hr{
+
+ margin-top: 17px;
+    margin-bottom: 20px;
+border: none;
+border-top: 1px solid rgb( 164, 196, 202 );
+}
+.main__inner-article p{
+		line-height: 1.5; /*-  не по  макету*/
+/*	font-family: Verdana, Geneva, sans-serif;   - по  макету*/
+	font-size: 14px;
+	color: #446973;
+	margin-bottom: 25px;
+}
+.main__inner-article button{
+background-color: transparent;
+border: 1px solid rgb( 174, 202, 208 );
+
+width: 100%;
+font-size: 20px;
+color: #446973;
+font-weight: bold;
+
+	display: flex;
+justify-content: space-between;
+align-items: center;
+
+height: 58px;
+/*padding-bottom: 1em;*/
+padding-left: 1em;
+padding-right: 1em;
+}
+
+.adr{
+	font-size: 40px;
+	color: #446973;
+	
+}
+
+
+/*services*/
+
+.services__inner{
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid rgb( 164, 196, 202 );
+gap: 10px;
+
+}
+
+.services__inner-block{
+flex: 0 0 22%;
+margin-top: 32px;
+}
+
+h3{
+font-size: 18px;
+color: #666;
+}
+
+.services__inner-block h3{
+padding-bottom: 13px;
+}
+
+/*	
+.services__inner-block p{
+font-family: Verdana, Geneva, sans-serif;}
+
+   - по  макету*/
+
+.services__inner-block hr{
+	margin-top: 15px;
+	margin-bottom: 15px;
+height: 1px;
+border: 0;
+background-color:  rgb( 164, 196, 202 );
+
+}
+
+
+
+.services__inner-block img{
+width: 100%;
+aspect-ratio: 1/1;
+/*height: 220px;*/
+ padding: 9px;
+border: 1px solid rgb( 150, 183, 190 );
+margin-bottom: 30px;
+
+}
+
+
+
+input[type=checkbox] {
+  display: none;
+}
+
+
+input[type=checkbox]:checked ~ label > img {
+  transform: scale(2.3);
+  cursor: zoom-out;
+   background-color: rgb( 203, 221, 225 );
+   margin-left: 5px;
+
+ box-shadow: 0 0 0 max(100vh, 100vw) rgba(0, 0, 0, .4);  /*затемнение всего кроме данного эл-та*/
+
+  
+}
+
+
+.services__inner-block img:hover {   /*меняет курсор при наведении*/
+    cursor: pointer;
+}
+
+/*about*/
+
+.about__inner{
+margin-top: 30px;
+margin-bottom: 30px;
+display: flex;
+justify-content: space-between;
+gap: 15px;
+}
+
+.about__inner__left-part{
+
+	width: 630px;
+}
+
+.about__inner__left-part hr{
+margin-top: 13px;
+	margin-bottom: 13px;
+height: 1px;
+border: 0;
+background-color:  rgb( 164, 196, 202 );
+
+}
+
+.about__inner__left-part p{
+		line-height: 1.1; 
+	font-family: Verdana, Geneva, sans-serif;   /*- по  макету*/
+	
+	color: #666;
+	margin-bottom: 17px;
+}
+
+.about__inner__right-part{
+  width: 300px;
+
+}
+
+.about__inner__right__head{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+margin-bottom: 5px;
+}
+
+.about__inner__right__head img{
+	width: 70px;
+height: 70px;
+ padding: 4px;
+border: 1px solid rgb( 150, 183, 190 );
+margin-right: 13px;
+}
+
+.about__inner__right__head h3{
+font-size: 20px;
+}
+
+
+.about__inner__right-part hr{
+
+height: 0.9px;
+border: 0;
+background-color:  rgb( 164, 196, 202 );
+margin-bottom: 18px;
+}
+
+.about__inner__right-part p{
+		line-height: 19.2px; 
+	font-family: Verdana, Geneva, sans-serif;   /*- по  макету*/
+	
+	color: #777;
+	margin-bottom: 9px;
+}
+
+.about__inner__right-part a{
+		font-size: 13px;
+	font-family: Verdana, Geneva, sans-serif; 
+	color: #26575e;
+	font-weight: bold;
+ 	float: right;
+}
+
+
+/*footer*/
+
+footer .container{
+background-color: rgb( 207, 225, 225 );
+
+}
+
+.footer__inner {
+height: 170px;
+display: flex;
+justify-content: space-between;
+gap: 15px;
+}
+
+.footer__inner-block{
+margin-top: 16px;
+width: 300px;
+
+}
+
+.footer__inner-block h3{
+	font-size: 22px;
+}
+.footer__inner-block hr{
+
+
+ margin-top: 7px;
+ margin-bottom: 26px;
+border: none;
+border-top: 1px solid rgb( 102, 102, 102 );
+
+}
+
+.footer__inner-block p{
+  font-size: 12px;
+	font-family: "Verdana";  /*- по  макету*/
+	color: rgb( 102, 102, 102 );
+ 
+}
+
+.footer__inner-block input {
+	margin-top: 12px;
+	margin-bottom: 16px;
+height: 25px;
+width: 260px;
+border: none;
+}
+
+
+.footer__inner-block__inp{
+
+width: 306px;
+
+}
+
+.footer__inner-block button {
+	white-space: nowrap;
+	margin-left: 4px;
+	width: 38px;
+	height: 25px;
+	border: none;
+}
+
+.footer__inner-block__links p{
+	color: #660000;
+	margin-bottom: 14px;
+}
+
+/*copyright*/
+
+.copyright .container{
+	background-color: rgb( 5, 68, 81 );
+}
+
+
+.copyright__inner{
+height: 40px;
+display: flex;
+justify-content: space-between;
+align-items:center;
+}
+
+.copyright__inner p{
+	font-size: 12px;
+	font-family: "Verdana";
+color: rgb( 207, 225, 225 );
+ 
+ }
